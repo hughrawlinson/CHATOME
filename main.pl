@@ -1,9 +1,10 @@
 #!/opt/local/bin/perl
 
 @lines;
+$prev;
 $break = 1;
 $n = 0;
-print "|| SYSTEM UP ||\n";
+print "|| SYSTEM UP || \n";
 
 sub the_loop{
 	#write this code
@@ -11,15 +12,15 @@ sub the_loop{
 
 while (1) {
 	$input = <STDIN>;
-	print '\n';
 	chomp($input);
 	if (scalar(@lines > 0)){
 		the_loop();
 	}
 	else{
-		push @{ $lines[0] = @responses0};
-		@lines[0][0] = $input;
-		$prev = @lines[0][0];
-		print @lines[0][0] . '\n';
+		@responses0;
+		push(@responses0, $input);
+		push(@lines, \@responses0);
+		$prev = $input;
+		print "$lines[0][0] \n";
 	}
 }
