@@ -1,11 +1,11 @@
-ChatToMe
+|| RAW SOFTWARE ||
 
-Chattome is a chat program designed to learn as the conversation progresses.
-Designed in 2011 by Hugh Rawlinson
+title = "|| CHATOME ||"
+author = "|| Hugh Rawlinson ||"
 
-Released under a creative commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)  license.
-For more information as to licensing, please visit:
-http://creativecommons.org/licenses/by-nc-sa/3.0/
+A converation simulator that builds up a database of appropriate responses over conversations. Theoretically, it would be able to accumulate a vast databse. I plan to facilitate this by developing a web interface, and adapting the program for deployment on a server. Another goal of the project is to implement context-awareness, and have the simulator respond not randomly from a pool of appropriate responses to any given input, but in a way that analyses the context of the input in order to give a more relevant output.
 
-For more information about the program, please visit:
-http://github.com/hughrawlinson/chattome
+Usage: python main.py
+I have yet to implement any arguments. Be aware that 'reset', 'save', 'load', and 'quit' are reserved keywords which trigger specific function in the program.
+
+This software is released under a Creative Commons Non-Commercial Share-Alike license.
